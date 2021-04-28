@@ -15,3 +15,9 @@ WHERE
 hire_date >= '1986-01-01'
 AND hire_date <= '1986-12-31';
 
+-- list manager of each department, need dept number, name, and employees manageds
+SELECT departments.dept_no, departments.dept_name, dept_managers.emp_no, employees.last_name, employees.first_name
+FROM departments
+JOIN dept_managers ON departments.dept_no = dept_managers.dept_no
+JOIN employees ON dept_managers.emp_no = employees.emp_no;
+
