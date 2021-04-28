@@ -10,10 +10,11 @@ SELECT * FROM departments
 
 -- Department Employee Table
 
+DROP TABLE dept_emp
+ 
 CREATE TABLE dept_emp(
-    emp_no INT,
-    dept_no VARCHAR,
-    dept_name VARCHAR
+	emp_no INT,
+	dept_no VARCHAR
 );
 
 SELECT * FROM dept_emp
