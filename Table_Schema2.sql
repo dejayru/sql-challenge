@@ -50,3 +50,12 @@ CREATE TABLE salaries(
 );
 
 SELECT * FROM salaries
+
+-- Titles table
+
+CREATE TABLE titles(
+	title_id VARCHAR,
+	title VARCHAR
+);
+
+SELECT * FROM titles
