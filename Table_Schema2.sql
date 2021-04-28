@@ -18,3 +18,26 @@ CREATE TABLE dept_emp(
 );
 
 SELECT * FROM dept_emp
+
+-- Department Managers Table
+
+CREATE TABLE dept_managers(
+	dept_no VARCHAR,
+	emp_no INT
+);
+
+SELECT * FROM dept_managers
+
+-- Employee table
+
+CREATE TABLE employees(
+	emp_no INT,
+	emp_title_id VARCHAR,
+	birth_date DATE,
+	first_name VARCHAR,
+	last_name VARCHAR,
+	sex VARCHAR,
+	hire_date DATE
+);
+
+SELECT * FROM employees
