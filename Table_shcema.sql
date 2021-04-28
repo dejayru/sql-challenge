@@ -59,3 +59,17 @@ CREATE TABLE dept_managers (
 );
 
 select * from dept_managers
+
+-- Salaries table
+
+DROP TABLE salaries
+
+CREATE TABLE salaries (
+emp_no BIGINT NOT NULL,
+	salary BIGINT NOT NULL,
+	from_date DATE NOT NULL,
+	to_date DATE NOT NULL,
+	FOREIGN KEY(emp_no) REFERENCES employees(emp_no)
+);
+
+select * from salaries
